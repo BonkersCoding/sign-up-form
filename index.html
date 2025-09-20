@@ -7,19 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="graphics/casey-horner-RmoWqDCqN2E-unsplash.jpg" alt="stars">
-    <form action="" method="post">
+    <div class="left">
+        <div class="logo">
+            <img src="graphics/odin-lined.png" alt="logo">
+            <span>ODIN</span>
+        </div>
+    </div>
+    <div class="right">
         <p>Feel out this form and bring a smile on my face</p>
-        <div class="input-field">
-            <label for="name">First name</label>
-            <input type="text" name="name" id="name">
-        </div>
-            <div><label for=""></label><input type="text"></div>
-            <div><label for=""></label><input type="text"></div>
-            <div><label for=""></label><input type="text"></div>
-            <div><label for=""></label><input type="text"></div>
-            <div><label for=""></label><input type="text"></input>
-        </div>
-    </form>
+        <form action="" method="post">
+            <div class="name form-container">
+                <div class="input-field">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                <div class="input-field">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+            </div>
+            <div class="contact-info form-container">
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="input-field">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+            </div>
+            <div class="generate-password form-container">
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="input-field">
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required>
+                </div>
+            </div>
+            <button type="submit">Create account</button>
+        </form>
+    </div>
 </body>
 </html>
